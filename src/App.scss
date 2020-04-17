@@ -51,25 +51,24 @@ header {
     h2 {
       font-family: "Open Sans";
       font-weight: 300;
-      font-size: 30px;
+      font-size: 35px;
     }
     .aboutText {
       margin: 100px auto 0 auto;
       font-family: "Open Sans";
       font-weight: 300;
-      font-size: 20px;
+      font-size: 22px;
       width: 600px;
       height: 150px;
     }
   }
 }
 .structure {
-  position: absolute;
   width: 100%;
+  position: absolute;
   img {
     z-index: 1;
     width: 100%;
-    height: 800px;
     position: absolute;
   }
   .info {
@@ -81,7 +80,7 @@ header {
     h2 {
       margin-top: 200px;
       font-weight: 300;
-      font-size: 30px;
+      font-size: 35px;
     }
     p {
       margin: 104px auto 0 auto;
@@ -101,7 +100,7 @@ header {
       font-weigth: 600;
       font-size: 12px;
     }
-    :hover {
+    button:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
   }
