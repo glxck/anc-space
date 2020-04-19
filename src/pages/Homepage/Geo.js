@@ -4,7 +4,8 @@ import Earth from '../../img/IMG_Earth.png'
 const Geo  = () => {
     return (
         <div className = 'geo'>
-            <img src = { Earth }/>
+            <div className='content'>
+                <img src = { Earth }/>
             <p>
                 АО «АНЦ» имеет собственные
                 научно-исследовательские площадки,
@@ -12,8 +13,9 @@ const Geo  = () => {
                 (гора Шаджатмаз) и в районе
                 г. Благовещенск Амурской области
             </p>
+            </div>
         </div>
     )
-}
+};
 
 export default Geo

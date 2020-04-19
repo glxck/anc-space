@@ -16,6 +16,6 @@ const Structure = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Structure

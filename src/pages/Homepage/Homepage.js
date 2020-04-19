@@ -4,16 +4,18 @@ import Banner from './Banner'
 import About from './About'
 import Structure from './Structure'
 import Geo from './Geo'
+import Telescopes from "./Telescopes";
 
 const Homepage = () => {
     return (
         <div>
-            <Header />
-            <Banner />
-            <About />
-            <Structure />
-            <Geo />
+            <Header/>
+            <Banner/>
+            <About/>
+            <Structure/>
+            <Geo/>
+            <Telescopes/>
         </div>
     )
-}
+};
 export default Homepage

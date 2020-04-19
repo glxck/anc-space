@@ -38,16 +38,15 @@ header {
 }
 .welcome {
   img {
-    max-width: 100%;
+    width: 100%;
   }
 }
-
 .about {
   width: auto;
   height: 400px;
-  text-align: center;
   .text {
     margin-top: 150px;
+    text-align: center;
     h2 {
       font-family: "Open Sans";
       font-weight: 300;
@@ -57,20 +56,19 @@ header {
       margin: 100px auto 0 auto;
       font-family: "Open Sans";
       font-weight: 300;
-      font-size: 22ыpx;
+      font-size: 22px;
       width: 600px;
       height: 150px;
     }
   }
 }
 .structure {
-  width: 100%;
-  height: 810px;
+  min-height: 810px;
+  overflow: hidden;
   position: relative;
   img {
-    z-index: 1;
-    width: 100%;
     position: absolute;
+    width: 100%;
   }
   .info {
     height: auto;
@@ -110,9 +108,69 @@ header {
 }
 .geo {
   width: auto;
-  height: 400px;
+  height: 600px;
+  .content {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    img {
+      width: auto;
+      height: auto;
+    }
+    p {
+      margin-left: 100px;
+      padding-top: 100px;
+      max-width: 676px;
+      height: 217px;
+      color: #353535;
+      font-family: "Open Sans";
+      font-size: 37px;
+      font-weight: 300;
+    }
+  }
+}
+.telescopes {
+  min-height: 1080px;
+  overflow: hidden;
+  position: relative;
   img {
-    width: auto;
-    heith: auto;
+    position: absolute;
+    width: 100%;
+  }
+  .info {
+    /*padding-top: 150px;*/
+    height: auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans";
+    h2 {
+      padding-top: 200px;
+      font-weight: 300;
+      font-size: 35px;
+    }
+    p {
+      padding-top: 104px;
+      padding-bottom: 104px;
+      margin: 0 auto;
+      width: 700px;
+      height: 125px;
+      font-weight: 400;
+      font-size: 25px;
+    }
+    button {
+      width: 200px;
+      height: 60px;
+      border-radius: 20px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      font-weigth: 600;
+      font-size: 12px;
+    }
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 }

@@ -7,5 +7,5 @@ const Banner = () => {
             <img src = { ANC }/>
         </div>
     )
-}
+};
 export default Banner
