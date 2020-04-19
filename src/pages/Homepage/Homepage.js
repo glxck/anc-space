@@ -14,6 +14,7 @@ const Homepage = () => {
             <About/>
             <Structure/>
             <Geo/>
+            <Telescopes/>
         </div>
     )
 };
