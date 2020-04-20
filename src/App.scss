@@ -56,7 +56,7 @@ header {
       margin: 100px auto 0 auto;
       font-family: "Open Sans";
       font-weight: 300;
-      font-size: 22px;
+      font-size: 25px;
       width: 600px;
       height: 150px;
     }
@@ -171,6 +171,60 @@ header {
     }
     button:hover {
       background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+.points {
+  width: 100%;
+  font-family: "Open Sans";
+  h2 {
+    padding-top: 130px;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+  }
+  .items {
+    margin: 0 auto;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 475px;
+      .firstPic {
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+        background-color: #353535;
+      }
+      .secondPic {
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+        background-color: #353535;
+      }
+  }
+}
+.footer {
+  width: 100%;
+  background-color: #222222;
+  .info {
+    margin: 0 auto;
+    width: 70%;
+    height: 70px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 300;
+    .contacts {
+      padding-top: 25px;
+      float: left;
+    }
+    img {
+      padding-top: 10px;
+    }
+    .address {
+      padding-top: 25px;
+      float: right;
     }
   }
 }

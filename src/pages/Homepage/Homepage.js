@@ -6,6 +6,7 @@ import Structure from './Structure'
 import Geo from './Geo'
 import Telescopes from "./Telescopes";
 import OpticalPoints from "./OpticalPoints"
+import Footer from './Footer'
 
 const Homepage = () => {
     return (
@@ -17,6 +18,7 @@ const Homepage = () => {
             <Geo />
             <Telescopes />
             <OpticalPoints />
+            <Footer />
         </div>
     )
 };
