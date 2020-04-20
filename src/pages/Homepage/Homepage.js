@@ -5,16 +5,18 @@ import About from './About'
 import Structure from './Structure'
 import Geo from './Geo'
 import Telescopes from "./Telescopes";
+import OpticalPoints from "./OpticalPoints"
 
 const Homepage = () => {
     return (
         <div>
-            <Header/>
-            <Banner/>
-            <About/>
-            <Structure/>
-            <Geo/>
-            <Telescopes/>
+            <Header />
+            <Banner />
+            <About />
+            <Structure />
+            <Geo />
+            <Telescopes />
+            <OpticalPoints />
         </div>
     )
 };
