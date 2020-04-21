@@ -3,7 +3,7 @@ header {
   height: 80px;
   background-color: rgba(17, 17, 17, 0.9);
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   .logo {
     margin: 20px 0 0 100px;
     float: left;
@@ -207,12 +207,51 @@ header {
         width: 400px;
         height: 400px;
         background-color: #353535;
+        position: relative;
+        z-index: 3;
+        img {
+          border-radius: 10px;
+          position: absolute;
+          z-index: 1;
+          width: 400px;
+          height: 400px;
+        }
+
+        p {
+          text-align: center;
+          padding-top: 180px;
+          position: relative;
+          z-index: 2;
+          color: #ffffff;
+          font-family: "Open Sans";
+          font-size: 35px;
+          font-weight: 300;
+        }
       }
       .secondPic {
+        overflow: hidden;
         border-radius: 10px;
         width: 400px;
         height: 400px;
         background-color: #353535;
+        img {
+          border-radius: 10px;
+          position: absolute;
+          z-index: 1;
+          width: 400px;
+          height: 400px;
+        }
+        p {
+          width: 200px;
+          text-align: end;
+          padding: 170px 0 0 65px;
+          position: relative;
+          z-index: 2;
+          color: #ffffff;
+          font-family: "Open Sans";
+          font-size: 35px;
+          font-weight: 300;
+        }
       }
   }
 }
