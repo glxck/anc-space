@@ -1,16 +1,16 @@
-import React from "react"
-import Header from "./Header"
+import React, { Fragment } from "react"
+import Header from "../../components/Header"
 import Banner from './Banner'
 import About from './About'
 import Structure from './Structure'
 import Geo from './Geo'
 import Telescopes from "./Telescopes";
 import OpticalPoints from "./OpticalPoints"
-import Footer from './Footer'
+import Footer from '../../components/Footer'
 
 const Homepage = () => {
     return (
-        <div>
+        <Fragment>
             <Header />
             <Banner />
             <About />
@@ -19,7 +19,7 @@ const Homepage = () => {
             <Telescopes />
             <OpticalPoints />
             <Footer />
-        </div>
+        </Fragment>
     )
 };
 export default Homepage
