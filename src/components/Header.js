@@ -1,6 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../img/ICO_Logo.png'
+import '../App.scss'
+import '../header.scss'
+
+
 
 const Header = () => {
     return (
@@ -11,19 +15,18 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <Link to = '/'>
+                    <NavLink to = '/' exact activeClassName='current'>
                         <li><a>Главная</a></li>
-                    </Link>
-                    <Link to = '/equipment'>
-                        <li><a>Оборудывание</a></li>
-                    </Link>
-                    <Link>
-
+                    </NavLink>
+                    <NavLink to = '/equipment' activeClassName='current'>
+                        <li><a>Оборудование</a></li>
+                    </NavLink>
+                    <NavLink to = '/services' activeClassName='current'>
                         <li><a>Услуги</a></li>
-                    </Link>
-                    <Link>
+                    </NavLink>
+                    <NavLink to = 'contacts' activeClassName='current'>
                         <li><a>Контакты</a></li>
-                    </Link>
+                    </NavLink>
                 </ul>
             </nav>
         </header>

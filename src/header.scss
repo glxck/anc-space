@@ -1,0 +1,35 @@
+ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  li {
+    color: #902d50;
+    padding-top: 29px;
+    a {
+      padding-top: 29px;
+      color: #fff;
+      font-family: "Open Sans";
+      font-weight: 300;
+      font-size: 15px;
+      padding-top: 29px;
+      height: 80px;
+      width: 100px;
+    }
+    :hover {
+      color: #902d50;
+      border-top: 3px #902d50 solid;
+      -webkit-transition: all 0.3s ease;;
+      -moz-transition: all 0.3s ease;;
+      -o-transition: all 0.3s ease;;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+a.current {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
+  color: #902d50;
+  border-top: 3px #902d50 solid;
+}
