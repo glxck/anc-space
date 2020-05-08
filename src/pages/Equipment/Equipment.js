@@ -9,7 +9,6 @@ const Equipment = () => {
             <Header/>
                 <div className = 'catalog'>
                     <TabMenu/>
-                    <FirstBlock/>
                 </div>
         </Fragment>
         )
