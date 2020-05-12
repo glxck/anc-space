@@ -36,8 +36,8 @@ class TabMenu extends React.PureComponent {
                     value={activeIndex}
                     onChange={this.handleChange}
                 >
-                    <MyTab  style={styles} label='МОДУЛЬНО ОПТИКО-ЭЛЕКТРОННЫЕ СРЕДСТВА' />
-                    <MyTab  style={styles} label='ФОТОПРИЕМНЫЕ УСТРОЙСТВА' />
+                    <MyTab style={styles} label='МОДУЛЬНО ОПТИКО-ЭЛЕКТРОННЫЕ СРЕДСТВА' />
+                    <MyTab style={styles} label='ФОТОПРИЕМНЫЕ УСТРОЙСТВА' />
                     <MyTab style={styles} label='ОПОРНО-ПОВОРОТНЫЕ УСТРЙОСТВА' />
                     <MyTab style={styles} label='ПАВИЛЬОНЫ УКРЫТИЯ' />
                 </VerticalTabs>
@@ -54,7 +54,9 @@ class TabMenu extends React.PureComponent {
 const VerticalTabs = withStyles(theme => ({
     flexContainer: {
         flexDirection: 'column',
-
+    },
+    textColor: {
+        color: '#fff'
     },
     indicator: {
         display: 'none',
@@ -63,8 +65,19 @@ const VerticalTabs = withStyles(theme => ({
 
 const MyTab = withStyles(theme => ({
     selected: {
-        color: 'tomato',
-        borderBottom: '2px solid tomato'
+        border: '3px solid #b73966 !important',
+        borderRadius: '10px',
+        width: '300px',
+        height: '90px',
+        marginTop: '20px',
+        textAlign: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        color: '#fff',
+        fontFamily: "Open Sans",
+        fontSize: '16px',
+        fontWeight: '300',
+        lineHeight: '25px',
     }
 }))(Tab);
 
