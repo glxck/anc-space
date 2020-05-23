@@ -1,12 +1,75 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react' //If u want to use class Component, just add "Component" to breckets
 import FirstPic from '../../../img/IMG-FirstTel.png'
-import info from '../../../characteristics'
+import axios from 'axios' //U can try to use fetch, but idk
+
+
+const FirstBlock = () => {
+    const [ data, setData ] = useState([{json: []}])
+
+    useEffect(() => {
+        axios.get("/api/data", {mode: "no-cors"}) //get data from express api
+            .then(res => {
+                console.log(res.data)
+            })
+    }, [])
+
+    return (
+        <div className = 'firstBlock'>
+            <div className = 'firstTelescope'>
+                <h2>МОЭС-25 </h2>
+                <img src = { FirstPic } />
+                <table>
+                    <tr>
+                        <td>Эффективное фокусное расстояние</td>
+                        <td>625мм</td>
+                    </tr>
+                    <tr>
+                        <td>Угловой диаметр полязрения</td>
+                        <td>4.8град.</td>
+                    </tr>
+                    <tr>
+                        <td>Линейный диаметр полязрения</td>
+                        <td>52мм</td>
+                    </tr>
+                    <tr>
+                        <td>Задний отрезок</td>
+                        <td>65мм</td>
+                    </tr>
+                    <tr>
+                        <td>Длина оптической системы</td>
+                        <td>248,44мм</td>
+                    </tr>
+                    <tr>
+                        <td>Длина с блендой / без бленды</td>
+                        <td>875 / 590 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр наибольший (с блендой)</td>
+                        <td>310мм</td>
+                    </tr>
+                    <tr>
+                        <td>Масса объектива, не более </td>
+                        <td>23кг</td>
+                    </tr>
+                    <tr className = 'big'>
+                        <td>Ожидаемое проницание
+                            за 5 с экспозиции на ФПУ,
+                            не хуже, зв. величина</td>
+                        <td> 16,5m</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    )
+}
+
+export default FirstBlock
 
 
 
+//class version of FirstBlock
 
-
-class FirstBlock extends Component {
+/*class FirstBlock extends Component {
 
     constructor(props) {
         super(props)
@@ -116,16 +179,9 @@ class FirstBlock extends Component {
         </div>
     )
     }
-}
+}*/
 
-
-
-export default FirstBlock
-
-
-
-
-
+//Only JSX/HTML
 /*
 <tr>
 <td>Эффективное фокусное расстояние</td>
