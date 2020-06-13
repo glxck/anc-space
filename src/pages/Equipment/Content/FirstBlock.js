@@ -3,7 +3,7 @@ import FirstPic from '../../../img/IMG-FirstTel.png'
 import axios from 'axios' //U can try to use fetch, but idk
 
 
-const FirstBlock = (img, id) => {
+const FirstBlock = ({src, obj}) => {
     const [ data, setData ] = useState([])
 
     useEffect(() => {
@@ -11,7 +11,7 @@ const FirstBlock = (img, id) => {
             .then(res => {
                 console.log(res.data)
                 console.log(res.data)
-                const filterData = res.data.filter((element) => {return element.id == 1}) //filter json by id
+                const filterData = res.data.filter((element) => {return element.id == obj}) //filter json by id
                 setData(filterData) //pull json to data
             })
     }, [])
@@ -20,7 +20,7 @@ const FirstBlock = (img, id) => {
         <div className = 'firstBlock'>
             <div className = 'firstTelescope'>
                 <h2>МОЭС-25 </h2>
-                <img src = { FirstPic } />
+                <img src = { src } />
                 <table>
                     {data.map((item, index) => (
                         <tr key={index}>

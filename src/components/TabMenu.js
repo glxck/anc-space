@@ -4,6 +4,7 @@ import Tab from '@material-ui/core/Tab'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles';
 import FirstBlock from "../pages/Equipment/Content/FirstBlock";
+import FirstPic from '../img/IMG-FirstTel.png'
 
 
 const styles = {
@@ -42,7 +43,7 @@ class TabMenu extends React.PureComponent {
                     <MyTab style={styles} label='ПАВИЛЬОНЫ УКРЫТИЯ' />
                 </VerticalTabs>
 
-                { activeIndex === 0 && <TabContainer><FirstBlock/></TabContainer> }
+                { activeIndex === 0 && <TabContainer><FirstBlock src={FirstPic} obj={0}/> <FirstBlock src={FirstPic} obj={1}/></TabContainer> }
                 { activeIndex === 1 && <TabContainer>Item Two</TabContainer> }
                 { activeIndex === 2 && <TabContainer>Item Three</TabContainer> }
                 { activeIndex === 3 && <TabContainer>Item Three</TabContainer> }
