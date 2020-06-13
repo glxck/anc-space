@@ -3,13 +3,16 @@ import FirstPic from '../../../img/IMG-FirstTel.png'
 import axios from 'axios' //U can try to use fetch, but idk
 
 
-const FirstBlock = () => {
-    const [ data, setData ] = useState([{json: []}])
+const FirstBlock = (img, id) => {
+    const [ data, setData ] = useState([])
 
     useEffect(() => {
-        axios.get("/api/data", {mode: "no-cors"}) //get data from express api
+        const res = axios.get("/api/data") //get data from express api
             .then(res => {
                 console.log(res.data)
+                console.log(res.data)
+                const filterData = res.data.filter((element) => {return element.id == 1}) //filter json by id
+                setData(filterData) //pull json to data
             })
     }, [])
 
@@ -19,44 +22,66 @@ const FirstBlock = () => {
                 <h2>МОЭС-25 </h2>
                 <img src = { FirstPic } />
                 <table>
-                    <tr>
-                        <td>Эффективное фокусное расстояние</td>
-                        <td>625мм</td>
-                    </tr>
-                    <tr>
-                        <td>Угловой диаметр полязрения</td>
-                        <td>4.8град.</td>
-                    </tr>
-                    <tr>
-                        <td>Линейный диаметр полязрения</td>
-                        <td>52мм</td>
-                    </tr>
-                    <tr>
-                        <td>Задний отрезок</td>
-                        <td>65мм</td>
-                    </tr>
-                    <tr>
-                        <td>Длина оптической системы</td>
-                        <td>248,44мм</td>
-                    </tr>
-                    <tr>
-                        <td>Длина с блендой / без бленды</td>
-                        <td>875 / 590 мм</td>
-                    </tr>
-                    <tr>
-                        <td>Диаметр наибольший (с блендой)</td>
-                        <td>310мм</td>
-                    </tr>
-                    <tr>
-                        <td>Масса объектива, не более </td>
-                        <td>23кг</td>
-                    </tr>
-                    <tr className = 'big'>
-                        <td>Ожидаемое проницание
-                            за 5 с экспозиции на ФПУ,
-                            не хуже, зв. величина</td>
-                        <td> 16,5m</td>
-                    </tr>
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.firstValue}</td>
+                            <td>{item.firstKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.secondValue}</td>
+                            <td>{item.secondKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.thirdValue}</td>
+                            <td>{item.thirdKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.fourthValue}</td>
+                            <td>{item.fourthKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.fifthValue}</td>
+                            <td>{item.fifthKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.sixthValue}</td>
+                            <td>{item.sixthKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.seventhValue}</td>
+                            <td>{item.seventhKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.eighthValue}</td>
+                            <td>{item.eighthKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.ninthValue}</td>
+                            <td>{item.ninthKey}</td>
+                        </tr>
+                    ))}
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.tenthValue}</td>
+                            <td>{item.tenthKey}</td>
+                        </tr>
+                    ))}
                 </table>
             </div>
         </div>
