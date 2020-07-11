@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Header from '../../components/Header'
 import TabMenu from "../../components/TabMenu"
-import FirstBlock from "./Content/FirstBlock"
+import Footer from "../../components/Footer"
 
 const Equipment = () => {
     return (
@@ -10,6 +10,7 @@ const Equipment = () => {
                 <div className = 'catalog'>
                     <TabMenu/>
                 </div>
+            <Footer/>
         </Fragment>
         )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BG from '../../img/BG-Structure.png'
 
 const Structure = () => {
@@ -12,7 +13,9 @@ const Structure = () => {
                     работают более 100 высококвалифицированных сотрудников,
                     имеющих большой практический опыт в области космической деятельности.
                 </p>
-                <button>УЗНАТЬ БОЛЬШЕ</button>
+                <Link to='/services'>
+                    <button>УЗНАТЬ БОЛЬШЕ</button>
+                </Link>
             </div>
         </div>
     )

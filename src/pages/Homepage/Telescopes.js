@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Telescope from '../../img/BG_Telescopes.png'
 
 const Telescopes  = () => {
@@ -12,7 +13,9 @@ const Telescopes  = () => {
                     с апертурой от 19см до 65см в 14 обсерваториях, расположенных в различных районах
                     Земного шара
                 </p>
-                <button>УЗНАТЬ БОЛЬШЕ</button>
+                <Link to='/equipment'>
+                    <button>УЗНАТЬ БОЛЬШЕ</button>
+                </Link>
             </div>
         </div>
     )

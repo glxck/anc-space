@@ -19,7 +19,9 @@ const FirstBlock = ({src, obj}) => {
     return (
         <div className = 'firstBlock'>
             <div className = 'firstTelescope'>
-                <h2>МОЭС-25 </h2>
+                {data.map((item, index) => (
+                    <h2 key={index}>{item.name}</h2>
+                ))}
                 <img src = { src } />
                 <table>
                     {data.map((item, index) => (

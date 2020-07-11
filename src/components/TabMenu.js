@@ -43,7 +43,14 @@ class TabMenu extends React.PureComponent {
                     <MyTab style={styles} label='ПАВИЛЬОНЫ УКРЫТИЯ' />
                 </VerticalTabs>
 
-                { activeIndex === 0 && <TabContainer><FirstBlock src={FirstPic} obj={0}/> <FirstBlock src={FirstPic} obj={1}/></TabContainer> }
+                { activeIndex === 0 && <TabContainer>
+                    <FirstBlock src={FirstPic} obj={1}/>
+                    <FirstBlock src={FirstPic} obj={2}/>
+                    <FirstBlock src={FirstPic} obj={3}/>
+                    <FirstBlock src={FirstPic} obj={4}/>
+                    <FirstBlock src={FirstPic} obj={5}/>
+                    <FirstBlock src={FirstPic} obj={6}/>
+                </TabContainer> }
                 { activeIndex === 1 && <TabContainer>Item Two</TabContainer> }
                 { activeIndex === 2 && <TabContainer>Item Three</TabContainer> }
                 { activeIndex === 3 && <TabContainer>Item Three</TabContainer> }
