@@ -8,7 +8,9 @@ const Equipment = () => {
         <Fragment>
             <Header/>
                 <div className = 'catalog'>
-                    <TabMenu/>
+                    <div className = 'layout'>
+                        <TabMenu/>
+                    </div>
                 </div>
             <Footer/>
         </Fragment>

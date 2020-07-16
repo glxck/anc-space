@@ -33,7 +33,7 @@ class TabMenu extends React.PureComponent {
             <div
             >
                 <VerticalTabs
-                    style={{ margin: '200px 0 0 10%', position: 'fixed'}}
+                    style={{ margin: '200px 0 0 0', position: 'fixed'}}
                     value={activeIndex}
                     onChange={this.handleChange}
                 >

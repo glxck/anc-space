@@ -23,6 +23,7 @@ const Item = ({img, txt, width, height, reverse, txtWidth, txtPadding}) => {
                     }}/>
                 </div>
                 <p style={{
+                    textAlign: 'left',
                     color: '#fff',
                     fontWeight: '300',
                     fontFamily: 'Open Sans',
@@ -32,7 +33,6 @@ const Item = ({img, txt, width, height, reverse, txtWidth, txtPadding}) => {
                 }}>{txt}</p>
             </div>
         )
-
 }
 
 export default Item

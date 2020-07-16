@@ -14,9 +14,9 @@ const Homepage = () => {
             <Header />
             <Banner />
             <About />
-            <Structure />
-            <Geo />
             <Telescopes />
+            <Geo />
+            <Structure />
             <OpticalPoints />
             <Footer />
         </Fragment>

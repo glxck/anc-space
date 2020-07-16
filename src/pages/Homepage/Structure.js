@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BG from '../../img/BG-Structure.png'
+import BG from '../../img/BG_Telescopes.png'
 
 const Structure = () => {
     return (

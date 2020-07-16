@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Telescope from '../../img/BG_Telescopes.png'
+import BG from '../../img/BG-Structure.png'
 
 const Telescopes  = () => {
     return (
         <div className = 'telescopes'>
-                <img src = { Telescope }/>
+                <img src = { BG }/>
             <div className='info'>
                 <h2>АО "АНЦ"</h2>
                 <p>
