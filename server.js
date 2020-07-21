@@ -5,7 +5,7 @@ const port = 5000
 
 //Simple express API
 app.get('/api/data', (req, res) => {
-    res.json(data) //create api for fetch/axios (if this not work, check proxy in package.json)
+    res.json(data) //create api for fetch/axios (if this is not working, check proxy in package.json)
 })
 
 app.listen(port, () => {
