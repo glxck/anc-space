@@ -353,10 +353,6 @@
 
         .big {
           height: 80px;
-
-          td {
-
-          }
         }
       }
     }
@@ -368,4 +364,38 @@
   background-color: #070707;
   width: 100%;
   height: auto;
+}
+
+.contactsPage {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background-color: #070707;
+  .content {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    .map {
+      float: left;
+    }
+    .info {
+      float: right;
+      margin: 320px 0 0 0;
+      ul {
+        margin-left: 50px;
+        li {
+          padding-top: 40px;
+          img {
+          }
+          p {
+            margin: -10px 0 0 10px;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }
