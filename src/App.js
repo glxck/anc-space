@@ -4,7 +4,7 @@ import './App.scss';
 import Homepage from "./pages/Homepage/Homepage"
 import Equipment from "./pages/Equipment/Equipment.js"
 import Services from "./pages/Services/Services.js"
-import Contacts from "./pages/Contacts/Contacts ";
+import Contacts from "./pages/Contacts/Contacts.js";
 
 function App() {
   return (
