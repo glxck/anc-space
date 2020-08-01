@@ -4,6 +4,7 @@ import Maps from './Maps.js'
 import Geo from '../../img/ICO_Geo.png'
 import Email from '../../img/ICO_Email.png'
 import Phone from '../../img/ICO_Phone.png'
+import Footer from '../../components/Footer'
 
 const Contacts = () => {
     return (
@@ -32,6 +33,7 @@ const Contacts = () => {
                         </ul>
                     </div>
                 </div>
+                <Footer/>
             </div>
         </Fragment>
     )

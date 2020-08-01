@@ -276,8 +276,6 @@
   width: 100%;
   background-color: rgba(17, 17, 17, 1);
   position: relative;
-
-
   .info {
     margin: 0 auto;
     width: 70%;
@@ -369,7 +367,7 @@
 .contactsPage {
   position: absolute;
   width: 100%;
-  height: 1080px;
+  height: auto;
   background-color: #070707;
   .content {
     width: 1000px;
