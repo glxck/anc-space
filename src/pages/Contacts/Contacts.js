@@ -24,7 +24,7 @@ const Contacts = () => {
                             </li>
                             <li>
                                 <img src = {Email} style = {{marginLeft: '-12px'}}/*style = {{width: '40px', height: '30px'}}*//>
-                                <p>info@ancprotek.ru</p>
+                                <p style = {{marign: '0 0 0 20px'}}>info@ancprotek.ru</p>
                             </li>
                             <li>
                                 <img src = {Phone} /*style = {{width: '38px', height: '30px'}}*//>
