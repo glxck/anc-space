@@ -9,11 +9,13 @@ const OpticalPoints = () => {
             <div className = 'items'>
                 <div className = 'firstPic'>
                     <img src = { LeftPic } />
-                    <p>Гора Шадмахадз</p>
+                    <p className = 'name'>Гора Шадмахадз</p>
+                    <p className = 'description'>Республика Карачаево-Черкесия</p>
                 </div>
                 <div className = 'secondPic'>
                     <img src = { RightPic } />
-                    <p>Благовещенский Район</p>
+                    <p className = 'name'>Благовещенский Район</p>
+                    <p className = 'description'>Амурская область</p>
                 </div>
             </div>
         </div>

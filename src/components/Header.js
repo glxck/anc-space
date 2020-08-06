@@ -11,7 +11,9 @@ const Header = () => {
         <header>
             <div className = 'logo'>
                 <h1>anc space</h1>
-                <a href = '#'><img src = { logo }/></a>
+                <NavLink to = '/'>
+                    <img src = { logo }/>
+                </NavLink>
             </div>
             <nav>
                 <ul>

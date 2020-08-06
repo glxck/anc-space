@@ -199,8 +199,7 @@
       z-index: 3;
 
       img {
-        -webkit-filter: blur(0);
-        filter: blur(0);
+        filter: blur(2px);
         -webkit-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
         border-radius: 10px;
@@ -210,21 +209,27 @@
         height: 400px;
       }
 
-      img:hover {
-        -webkit-filter: blur(2px);
-        filter: blur(2px);
-      }
-
-      p {
-        user-select: none;
-        margin-top: 170px;
-        text-align: center;
+      .name {
+        width: 130px;
+        text-align: end;
+        margin: 170px 0 0 100px;
         position: relative;
         z-index: 2;
         color: #ffffff;
         font-family: "Open Sans";
         font-size: 35px;
         font-weight: 300;
+      }
+      .description {
+        user-select: none;
+        text-align: center;
+        padding-top: 70px;
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 400;
       }
     }
 
@@ -240,10 +245,11 @@
       background-color: #353535;
 
       img {
-        -webkit-filter: blur(0);
+        filter: blur(2px);
+        /*-webkit-filter: blur(0);
         filter: blur(0);
         -webkit-transition: .2s ease-in-out;
-        transition: .2s ease-in-out;
+        transition: .2s ease-in-out;*/
         border-radius: 10px;
         position: absolute;
         z-index: 1;
@@ -251,12 +257,9 @@
         height: 400px;
       }
 
-      img:hover {
-        -webkit-filter: blur(2px);
-        filter: blur(2px);
-      }
+      
 
-      p {
+      .name {
         user-select: none;
         width: 200px;
         text-align: end;
@@ -267,6 +270,17 @@
         font-family: "Open Sans";
         font-size: 35px;
         font-weight: 300;
+      }
+      .description {
+        user-select: none;
+        text-align: center;
+        padding-top: 70px;
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 400;
       }
     }
   }
@@ -317,7 +331,6 @@
       margin: 190px 0 0 0;
       float: right;
       color: #fff;
-
       h2 {
         text-align: center;
         font-family: "Open Sans";
@@ -326,10 +339,11 @@
       }
 
       img {
-        padding-top: 40px;
+        border-radius: 10px;
+        margin-top: 40px;
         width: 600px;
         height: 400px;
-
+        overflow: hidden;
       }
 
       table {
